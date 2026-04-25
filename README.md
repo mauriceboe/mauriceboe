@@ -1,83 +1,125 @@
+<div align="center">
+
+<img src="https://github.com/mauriceboe.png" alt="Maurice" width="110" style="border-radius: 50%" />
+
+<br />
+<br />
+
 # Maurice
 
-<sub>Full-time dev. CS student at night. Open-source maintainer somewhere in between.<br>
-I build self-hosted things — mostly because I'd rather not rent them.</sub>
+<sub>Self-hosted maker · Open source by default · Berlin</sub>
 
-<br>
+<br />
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=16&duration=3500&pause=900&color=4F46E5&vCenter=true&width=640&lines=building+tools+i+wish+existed.;self-hosted+%3E+SaaS.;your+data%2C+your+rules%2C+your+server.;pack+light.+back+up+often.)](https://github.com/mauriceboe)
+I build the tools I wish existed.<br />
+Mostly because I'd rather not rent them.
+
+<br />
+
+<a href="https://github.com/mauriceboe"><img src="https://img.shields.io/badge/GitHub-1c1c1e?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>&nbsp;
+<a href="https://discord.gg/7Q6M6jDwzf"><img src="https://img.shields.io/badge/Discord-1c1c1e?style=for-the-badge&logo=discord&logoColor=5865F2" alt="Discord" /></a>&nbsp;
+<a href="https://ko-fi.com/mauriceboe"><img src="https://img.shields.io/badge/Ko--fi-1c1c1e?style=for-the-badge&logo=kofi&logoColor=FF5E5B" alt="Ko-fi" /></a>&nbsp;
+<a href="https://www.buymeacoffee.com/mauriceboe"><img src="https://img.shields.io/badge/Buy_me_a_coffee-1c1c1e?style=for-the-badge&logo=buymeacoffee&logoColor=FFDD00" alt="BMC" /></a>
+
+</div>
+
+<br />
 
 ---
 
-### 🗺️ Flightplan
+<br />
+
+## Featured
 
 <table>
 <tr>
-<td width="200" align="center" valign="middle">
+<td width="50%" valign="top">
 
 <a href="https://github.com/mauriceboe/TREK">
-<img src="https://img.shields.io/badge/T__R__E__K-4F46E5?style=for-the-badge&labelColor=111827&logoColor=white" alt="TREK" />
+  <img alt="TREK" src="https://raw.githubusercontent.com/mauriceboe/TREK/main/docs/screenshots/dashboard.png" />
 </a>
 
+### [TREK](https://github.com/mauriceboe/TREK)
+
+Self-hosted collaborative travel planner.<br />
+Maps · budgets · packing · journals · PWA · SSO · MCP.
+
+<a href="https://demo-nomad.pakulat.org"><img src="https://img.shields.io/badge/Try_demo-0a84ff?style=flat-square&labelColor=1c1c1e" /></a>&nbsp;
+<a href="https://hub.docker.com/r/mauriceboe/trek"><img src="https://img.shields.io/docker/pulls/mauriceboe/trek?style=flat-square&logo=docker&logoColor=ffffff&label=pulls&labelColor=1c1c1e&color=2496ED" /></a>&nbsp;
+<img src="https://img.shields.io/github/stars/mauriceboe/TREK?style=flat-square&label=stars&labelColor=1c1c1e&color=4F46E5" />
+
 </td>
-<td valign="middle">
+<td width="50%" valign="top">
 
-**[TREK](https://github.com/mauriceboe/TREK)** — self-hosted collaborative travel planner  
-Days · Maps · Budgets · Packing · Reservations · Journey journals · PWA · SSO · MCP
+<a href="https://github.com/mauriceboe/Tune">
+  <img alt="Tune" src="https://raw.githubusercontent.com/mauriceboe/Tune/main/docs/screenshots/now-playing.png" />
+</a>
 
-[![stars](https://img.shields.io/github/stars/mauriceboe/TREK?style=flat&logo=github&logoColor=white&labelColor=111827&color=4F46E5)](https://github.com/mauriceboe/TREK/stargazers) [![release](https://img.shields.io/github/v/release/mauriceboe/TREK?include_prereleases&style=flat&logo=semanticrelease&logoColor=white&labelColor=111827&color=4F46E5)](https://github.com/mauriceboe/TREK/releases) [![docker pulls](https://img.shields.io/docker/pulls/mauriceboe/trek?style=flat&logo=docker&logoColor=white&labelColor=111827&color=4F46E5)](https://hub.docker.com/r/mauriceboe/trek) [![license](https://img.shields.io/github/license/mauriceboe/TREK?style=flat&labelColor=111827&color=4F46E5)](https://github.com/mauriceboe/TREK/blob/main/LICENSE) [![discord](https://img.shields.io/badge/discord-join-5865F2?style=flat&logo=discord&logoColor=white&labelColor=111827)](https://discord.gg/7Q6M6jDwzf)
+### [Tune](https://github.com/mauriceboe/Tune)
 
-🔗 **Demo** · [demo-nomad.pakulat.org](https://demo-nomad.pakulat.org) · `demo@demo.de` / `Demo12345!`
+Discord Rich Presence for Apple Music on Windows.<br />
+Liquid Glass UI · synced lyrics · listening stats.
+
+<a href="https://github.com/mauriceboe/Tune/releases/latest"><img src="https://img.shields.io/badge/Download-fc3c44?style=flat-square&logo=windows&logoColor=ffffff&labelColor=1c1c1e" /></a>&nbsp;
+<a href="https://github.com/mauriceboe/Tune/releases"><img src="https://img.shields.io/github/v/release/mauriceboe/Tune?include_prereleases&style=flat-square&label=latest&labelColor=1c1c1e&color=fc3c44" /></a>&nbsp;
+<img src="https://img.shields.io/github/stars/mauriceboe/Tune?style=flat-square&label=stars&labelColor=1c1c1e&color=fc3c44" />
 
 </td>
 </tr>
 </table>
 
----
-
-### 🎒 Luggage
-
-<p align="left">
-  <img src="https://skillicons.dev/icons?i=ts,react,nodejs,express,sqlite,tailwind,vite,docker,nginx,linux&perline=10" alt="stack" />
-</p>
-
-`Zustand` · `Leaflet` · `better-sqlite3` · `react-pdf` · `WebSocket` · `Zod` · `Vitest` · `Playwright`
+<br />
 
 ---
 
-### 🛰️ Homelab constellation
+<br />
 
-```
-                           ┌──────── pakulat.org ────────┐
-                           │                              │
-       trip ──┐   immich ──┤   n8n ──┐   mailcow ──┐      │
-              │            │         │             │      │
-              └────────── 📡 vServer · 🐧 ─────────┘      │
-                                  │                       │
-                       docker · nginx · certbot           │
-                           │                              │
-                           └──────────────────────────────┘
-```
+<div align="center">
 
-<sub>Immich for photos · Mailcow for mail · n8n for glue · Pileo for kanban · TREK for trips · Cloudreve for files. <b>Self-hosted as a hobby — not as a protest.</b></sub>
+## Made with
 
----
+<img src="https://skillicons.dev/icons?i=ts,react,nodejs,python,tailwind,vite,docker,sqlite,nginx,linux&theme=dark&perline=10" alt="stack" />
 
-### 📈 Routing table
+<br />
+<br />
 
-<p align="left">
-<img src="https://github-readme-stats.vercel.app/api?username=mauriceboe&show_icons=true&hide_border=true&bg_color=00000000&title_color=4F46E5&icon_color=6366F1&text_color=94A3B8&ring_color=4F46E5&include_all_commits=true&count_private=true&hide_title=true&hide_rank=true&card_width=420" height="155" alt="stats" />
-</p>
+<sub><code>Zustand</code> · <code>WebSocket</code> · <code>Leaflet</code> · <code>better-sqlite3</code> · <code>pywebview</code> · <code>WebView2</code> · <code>Vitest</code> · <code>Playwright</code></sub>
+
+</div>
+
+<br />
 
 ---
 
-### 📬 Postcards
+<br />
 
-- 💬 [TREK Discussions](https://github.com/mauriceboe/TREK/discussions) — feature ideas, questions, ramblings
-- 🐛 Issues make me unreasonably happy. They mean someone used it.
-- 🎧 [Discord](https://discord.gg/7Q6M6jDwzf) — drop by and say hi
-- ☕ [Ko-fi](https://ko-fi.com/mauriceboe) — keeps the lights on
+## Self-hosted
+
+A single vServer. Docker. No cloud bill.
+
+<sub>
+<code>trek</code>  ·  <code>immich</code>  ·  <code>mailcow</code>  ·  <code>n8n</code>  ·  <code>pileo</code>  ·  <code>cloudreve</code>
+</sub>
+
+<br />
+<br />
+
+<sub><i>Self-hosted as a hobby — not as a protest.</i></sub>
+
+<br />
 
 ---
 
-<sub><i>Pack light. Back up often. The best route is the one you built yourself.</i></sub>
+<br />
+
+<div align="center">
+
+<img src="https://github-readme-stats.vercel.app/api?username=mauriceboe&show_icons=true&hide_border=true&bg_color=00000000&title_color=ffffff&icon_color=0a84ff&text_color=86868b&include_all_commits=true&count_private=true&hide_title=true&hide_rank=true&card_width=420" height="155" alt="stats" />
+
+<br />
+<br />
+<br />
+
+<sub><i>Berlin · Designed and crafted by Maurice.</i></sub>
+
+</div>
