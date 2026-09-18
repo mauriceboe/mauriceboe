@@ -20,15 +20,13 @@
 <p>
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/stack-fe-dark.png" />
-  <img src="assets/stack-fe-light.png" width="288" alt="Frontend: TypeScript, React 19, Tailwind, Vite, Zustand, Zod" />
-</picture>
-<picture>
+  <img src="assets/stack-fe-light.png" width="276" alt="Frontend: TypeScript, React 19, Tailwind, Vite, Zustand, Zod" />
+</picture><picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/stack-be-dark.png" />
-  <img src="assets/stack-be-light.png" width="288" alt="Backend: Node.js, NestJS, Express, SQLite, WebSockets, MCP, OAuth 2.1" />
-</picture>
-<picture>
+  <img src="assets/stack-be-light.png" width="276" alt="Backend: Node.js, NestJS, Express, SQLite, WebSockets, MCP, OAuth 2.1" />
+</picture><picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/stack-infra-dark.png" />
-  <img src="assets/stack-infra-light.png" width="288" alt="Infrastructure: Docker, Linux, Proxmox, Caddy, WireGuard, Authentik" />
+  <img src="assets/stack-infra-light.png" width="276" alt="Infrastructure: Docker, Linux, Proxmox, Caddy, WireGuard, Authentik" />
 </picture>
 </p>
 
@@ -36,19 +34,17 @@
 <a href="https://discord.gg/7Q6M6jDwzf">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/link-discord-dark.png" />
-    <img src="assets/link-discord-light.png" width="288" alt="Discord" />
+    <img src="assets/link-discord-light.png" width="276" alt="Discord" />
   </picture>
-</a>
-<a href="https://demo.liketrek.com">
+</a><a href="https://demo.liketrek.com">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/link-demo-dark.png" />
-    <img src="assets/link-demo-light.png" width="288" alt="Live demo at demo.liketrek.com" />
+    <img src="assets/link-demo-light.png" width="276" alt="Live demo at demo.liketrek.com" />
   </picture>
-</a>
-<a href="https://ko-fi.com/mauriceboe">
+</a><a href="https://ko-fi.com/mauriceboe">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/link-kofi-dark.png" />
-    <img src="assets/link-kofi-light.png" width="288" alt="Ko-fi, buy me a coffee" />
+    <img src="assets/link-kofi-light.png" width="276" alt="Ko-fi, buy me a coffee" />
   </picture>
 </a>
 </p>
