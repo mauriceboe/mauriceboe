@@ -20,6 +20,7 @@
 There are a few more that only the homelab ever sees: a finance planner, a recipe planner and
 a kanban board, all built for one household and kept that way.
 
+<p>
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/stack-fe-dark.png" />
   <img src="assets/stack-fe-light.png" width="288" alt="Frontend: TypeScript, React 19, Tailwind, Vite, Zustand, Zod" />
@@ -32,7 +33,9 @@ a kanban board, all built for one household and kept that way.
   <source media="(prefers-color-scheme: dark)" srcset="assets/stack-infra-dark.png" />
   <img src="assets/stack-infra-light.png" width="288" alt="Infrastructure: Docker, Linux, Proxmox, Caddy, WireGuard, Authentik" />
 </picture>
+</p>
 
+<p>
 <a href="https://discord.gg/7Q6M6jDwzf">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/link-discord-dark.png" />
@@ -51,6 +54,7 @@ a kanban board, all built for one household and kept that way.
     <img src="assets/link-kofi-light.png" width="288" alt="Ko-fi, buy me a coffee" />
   </picture>
 </a>
+</p>
 
 <sub>
   <a href="https://discord.gg/7Q6M6jDwzf">Discord</a> ·
