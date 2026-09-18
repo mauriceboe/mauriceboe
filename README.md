@@ -17,9 +17,6 @@
   </picture>
 </a>
 
-There are a few more that only the homelab ever sees: a finance planner, a recipe planner and
-a kanban board, all built for one household and kept that way.
-
 <p>
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/stack-fe-dark.png" />
