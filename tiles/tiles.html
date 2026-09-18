@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+  /* Profile tiles, built on the TREK release style line (see trek-releases/STYLE.md):
+     the same glass recipe, the same Poppins, the same restraint. Two themes, because a
+     GitHub profile is read on a white page as often as on a black one, and each tile is
+     exported on its own so it can carry its own link. */
+
+  /* ── dark: TREK's own tokens ─────────────────────────────────────────────── */
+  body.dark {
+    --plate: #121215;
+    --ink: #f4f4f5;
+    --ink-2: #a1a1aa;
+    --ink-3: #71717a;
+    --glass: linear-gradient(168deg, rgba(255, 255, 255, 0.075), rgba(255, 255, 255, 0.02) 64%), #121215;
+    --glass-border: rgba(255, 255, 255, 0.085);
+    --glass-edge: inset 0 1px 0 rgba(255, 255, 255, 0.11), inset 0 -1px 0 rgba(0, 0, 0, 0.22);
+    --plate-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.07), inset 0 -1px 0 rgba(0, 0, 0, 0.3);
+    --hair: rgba(255, 255, 255, 0.09);
+    --chip-fill: #f4f4f5;
+    --chip-ink: #121215;
+  }
+
+  /* ── light: the same construction, lit from the other side ───────────────── */
+  body.light {
+    --plate: #f5f5f7;
+    --ink: #1d1d1f;
+    --ink-2: #4b4b50;
+    --ink-3: #86868b;
+    --glass: linear-gradient(168deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.6) 64%), #ffffff;
+    --glass-border: rgba(0, 0, 0, 0.07);
+    --glass-edge: inset 0 1px 0 rgba(255, 255, 255, 1), inset 0 -1px 0 rgba(0, 0, 0, 0.03);
+    --plate-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.9), inset 0 -1px 0 rgba(0, 0, 0, 0.04);
+    --hair: rgba(0, 0, 0, 0.07);
+    --chip-fill: #1d1d1f;
+    --chip-ink: #f5f5f7;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: #000;
+    font-family: 'Poppins', system-ui, sans-serif;
+    width: 940px;
+    padding: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    color: var(--ink);
+  }
+  body.light { background: #fff; }
+
+  .plate {
+    background: var(--plate);
+    border: 1px solid var(--glass-border);
+    box-shadow: var(--plate-shadow);
+    border-radius: 22px;
+    overflow: hidden;
+  }
+  .glass {
+    background: var(--glass);
+    border: 1px solid var(--glass-border);
+    box-shadow: var(--glass-edge);
+    border-radius: 14px;
+  }
+
+  .full { width: 892px; }
+  .half { width: 439px; }
+  .third { width: 288px; }
+
+  /* ── hero ─────────────────────────────────────────────────────────────────── */
+  #hero { padding: 36px 40px; display: flex; align-items: flex-end; justify-content: space-between; }
+  #hero .name { font-size: 40px; font-weight: 600; letter-spacing: -0.03em; line-height: 1.05; }
+  #hero .role { font-size: 15.5px; font-weight: 400; color: var(--ink-2); margin-top: 8px; }
+  /* The place sits in its own pane inside the plate: glass within glass, the way the
+     release chips do it. */
+  #hero .place {
+    font-size: 11px; font-weight: 600; letter-spacing: 0.13em; text-transform: uppercase;
+    color: var(--ink-3); padding: 9px 16px; border-radius: 999px;
+    background: var(--glass); border: 1px solid var(--glass-border); box-shadow: var(--glass-edge);
+    margin-bottom: 4px; white-space: nowrap;
+  }
+
+  /* ── project plates ───────────────────────────────────────────────────────── */
+  .proj { padding: 30px 34px 28px; }
+  .proj .eyebrow {
+    font-size: 10.5px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--ink-3);
+  }
+  .proj .mark { height: 34px; margin: 14px 0 0; display: block; }
+  .proj h2 { font-size: 25px; font-weight: 600; letter-spacing: -0.02em; margin-top: 14px; }
+  .proj p { font-size: 14px; font-weight: 400; line-height: 1.5; color: var(--ink-2); margin-top: 9px; }
+
+  .facts { display: flex; gap: 10px; margin-top: 22px; }
+  .fact { flex: 1; padding: 13px 15px 14px; }
+  .fact .fig { font-size: 25px; font-weight: 700; letter-spacing: -0.045em; line-height: 1; }
+  .fact .fig span { font-size: 15px; font-weight: 600; color: var(--ink-3); letter-spacing: 0; margin-left: 3px; }
+  .fact .lab {
+    font-size: 10.5px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase;
+    color: var(--ink-3); margin-top: 7px;
+  }
+
+  /* ── stack tiles ──────────────────────────────────────────────────────────── */
+  .stack { padding: 20px 22px 22px; }
+  .stack .lead {
+    font-size: 10.5px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--ink-3);
+  }
+  .stack ul { list-style: none; margin-top: 12px; }
+  .stack li {
+    font-size: 13.5px; font-weight: 500; color: var(--ink); padding: 5px 0;
+    border-bottom: 1px solid var(--hair);
+  }
+  .stack li:last-child { border-bottom: 0; }
+
+  /* ── link tiles ───────────────────────────────────────────────────────────── */
+  /* One plate per destination: a single wide band could only ever carry one link,
+     and these are three different places to go. */
+  .link { padding: 17px 20px 18px; }
+  .link .t { font-size: 15px; font-weight: 600; letter-spacing: -0.01em; }
+  .link .s { font-size: 11.5px; font-weight: 400; color: var(--ink-3); margin-top: 3px; }
+</style>
+</head>
+<body class="dark">
+
+  <div class="plate full" id="hero">
+    <div>
+      <div class="name">Maurice</div>
+      <div class="role">Full-stack developer. I build self-hosted software and run it myself.</div>
+    </div>
+    <div class="place">Rostock at the Baltic coast</div>
+  </div>
+
+  <div class="plate full proj" id="trek">
+    <div class="eyebrow">The one I put the most into</div>
+    <img class="mark" id="trekmark" src="build/trek-wordmark-light.svg" alt="TREK" />
+    <p>
+      A self-hosted travel planner for people who plan together: interactive maps, day by day
+      itineraries, budgets, packing lists, journals, live sync, PWA, SSO and a plugin system.
+    </p>
+    <div class="facts">
+      <div class="glass fact">
+        <div class="fig" data-stat="stars">14.0<span>k</span></div>
+        <div class="lab">GitHub stars</div>
+      </div>
+      <div class="glass fact">
+        <div class="fig" data-stat="pulls">1.18<span>M</span></div>
+        <div class="lab">Docker pulls</div>
+      </div>
+      <div class="glass fact">
+        <div class="fig" data-stat="languages">23</div>
+        <div class="lab">Languages</div>
+      </div>
+      <div class="glass fact">
+        <div class="fig" data-stat="release">v4.2.1</div>
+        <div class="lab">Latest release</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="plate full proj" id="tune">
+    <div class="eyebrow">Windows app</div>
+    <h2>Tune</h2>
+    <p>
+      Discord Rich Presence for Apple Music on Windows. Synced lyrics, listening stats and a
+      Liquid Glass interface.
+    </p>
+  </div>
+
+  <div class="plate third stack" id="stack-fe">
+    <div class="lead">Frontend</div>
+    <ul>
+      <li>TypeScript</li>
+      <li>React 19</li>
+      <li>Tailwind, Vite</li>
+      <li>Zustand, Zod</li>
+    </ul>
+  </div>
+
+  <div class="plate third stack" id="stack-be">
+    <div class="lead">Backend</div>
+    <ul>
+      <li>Node.js</li>
+      <li>NestJS, Express</li>
+      <li>SQLite, WebSockets</li>
+      <li>MCP, OAuth 2.1</li>
+    </ul>
+  </div>
+
+  <div class="plate third stack" id="stack-infra">
+    <div class="lead">Infrastructure</div>
+    <ul>
+      <li>Docker</li>
+      <li>Linux, Proxmox</li>
+      <li>Caddy, WireGuard</li>
+      <li>Authentik</li>
+    </ul>
+  </div>
+
+  <div class="plate third link" id="link-discord">
+    <div class="t">Discord</div>
+    <div class="s">Where TREK is talked about</div>
+  </div>
+
+  <div class="plate third link" id="link-demo">
+    <div class="t">Live demo</div>
+    <div class="s">demo.liketrek.com</div>
+  </div>
+
+  <div class="plate third link" id="link-kofi">
+    <div class="t">Ko-fi</div>
+    <div class="s">Buy me a coffee</div>
+  </div>
+
+</body>
+</html>

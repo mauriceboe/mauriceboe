@@ -1,0 +1,60 @@
+name: Refresh profile tiles
+
+# The four figures on the TREK tile age: stars climb, pulls climb, releases ship.
+# This re-renders the very same template once a day and commits only when a number
+# actually moved, so the profile keeps itself current without touching the design.
+
+on:
+  schedule:
+    - cron: '17 5 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: tiles
+  cancel-in-progress: true
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install Playwright
+        run: |
+          npm init -y >/dev/null 2>&1
+          npm install --no-save playwright
+          npx playwright install --with-deps chromium
+
+      - name: Pull today's numbers into the template
+        working-directory: tiles
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: node refresh.mjs
+
+      - name: Render every tile, light and dark
+        working-directory: tiles
+        run: node export.mjs
+
+      - name: Publish the rendered tiles
+        run: |
+          cp tiles/build/*-dark.png tiles/build/*-light.png assets/
+          rm -f assets/trek-wordmark-*.png
+
+      - name: Commit only when something changed
+        run: |
+          git config user.name "Maurice"
+          git config user.email "mauriceboe@icloud.com"
+          if git diff --quiet -- assets tiles/tiles.html; then
+            echo "nothing moved today"
+            exit 0
+          fi
+          git add assets tiles/tiles.html
+          git commit -m "Refresh profile tiles"
+          git push
