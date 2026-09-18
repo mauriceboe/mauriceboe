@@ -11,7 +11,7 @@ import { pathToFileURL } from 'node:url'
 
 const HERE = resolve('.')
 const OUT = join(HERE, 'build')
-const TILES = ['hero', 'trek', 'tune', 'stack-fe', 'stack-be', 'stack-infra', 'link-discord', 'link-demo', 'link-kofi']
+const TILES = ['hero', 'trek', 'tune', 'stack-fe', 'stack-be', 'stack-infra', 'link-discord', 'link-demo', 'link-docker', 'link-kofi']
 
 const browser = await chromium.launch()
 const page = await browser.newPage({ deviceScaleFactor: 2, viewport: { width: 940, height: 1400 } })
